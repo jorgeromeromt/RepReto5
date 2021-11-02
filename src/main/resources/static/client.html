@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/clientScript.js"></script>
+</head>
+<body>
+    
+    <h1>ALQUILER DE COMPUTADORES</h1>
+
+    <a href="menuPrincipal.html">Volver al Menú Principal</a>
+    <p> </p>
+
+    </p><br/><br/>
+    <h1>CLIENTES</h1>
+    <p>Digite los campos a continuación para agregar un nuevo Cliente:</p>
+
+    <input type="hidden" id="idClient">
+    <input type="text" id="email" placeholder="Correo Electronico">
+    <input type="text" id="password" placeholder="Contraseña">
+    <input type="text" id="name" placeholder="Nombre">
+    <input type="number" id="age" placeholder="Edad">
+    <select id="select-category"></select>
+    
+
+    <button onclick="agregar()" id="btnAgregar">AGREGRAR</button>
+    <button onclick="listar()" id="btnListar">MOSTRAR CLIENTES</button>
+    <button onclick="actualizar()" id="btnActualizar">ACTUALIZAR</button>
+    <p>
+
+    </p><br/>
+    <div id="listado"></div>
+    <script type="text/javascript"> 
+        window.onload = listar();
+    </script>
+</body>
+</html>
